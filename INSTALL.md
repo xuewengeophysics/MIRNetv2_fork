@@ -17,9 +17,10 @@ conda activate pytorch111
 
 3. Install dependencies
 ```
-conda install pytorch=1.11 torchvision cudatoolkit=10.2 -c pytorch
+# conda install pytorch=1.11 torchvision cudatoolkit=10.2 -c pytorch
+pip install torch==1.11.0+cu113 torchvision==0.12.0+cu113 torchaudio==0.11.0 --extra-index-url https://download.pytorch.org/whl/cu113
 pip install matplotlib scikit-learn scikit-image opencv-python yacs joblib natsort h5py tqdm
-pip install einops gdown addict future lmdb numpy pyyaml requests scipy tb-nightly yapf lpips
+pip install einops gdown addict future lmdb numpy pyyaml requests scipy tb-nightly yapf lpips Cython
 ```
 
 4. Install basicsr
